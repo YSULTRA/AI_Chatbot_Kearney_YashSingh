@@ -26,8 +26,8 @@ class RAGPipeline:
         # STEP 1: Initialize embedding model
         # Why: We need the SAME model for both documents and queries
         logger.info("Loading embedding model...")
-        self.embedding_model = SentenceTransformer('all-mpnet-base-v2')
-        logger.info("✅ Embedding model loaded: all-mpnet-base-v2 (768 dimensions)")
+        self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+        logger.info("✅ Embedding model loaded: all-MiniLM-L6-v2 (384 dimensions)")
 
         # STEP 2: Initialize vector database (ChromaDB)
         # Why: Store document embeddings for fast similarity search
