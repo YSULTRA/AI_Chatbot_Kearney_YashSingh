@@ -24,7 +24,7 @@ git clone https://github.com/YSULTRA/AI_Chatbot_Kearney_YashSingh.git
 cd AI_Chatbot_Kearney_YashSingh
 ```
 
-### Step 2: Run the Setup Script
+### Step 2: Run the Setup Script ( If Script Fails use the manual steps given below )
 
 ```
 python start.py
@@ -50,19 +50,24 @@ The script will automatically:
 
 
 ## 📝 Manual Setup
-
+```
+cd .\AI_Chatbot_Kearney_YashSingh\
+```
 
 ### Start Backend in Terminal 
 ```
 cd chatbot-backend
+python -m venv env
 env\Scripts\activate          # Windows
 source env/bin/activate       # Mac/Linux
+pip install -r .\requirements.txt
 python -m uvicorn app.main:app --reload --port 8000
 ```
 
 ### Start Frontend in Other Terminal
 ```
 cd chatbot-frontend
+npm install
 npm run dev
 ```
 
