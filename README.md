@@ -46,6 +46,30 @@ The script will automatically:
 <img width="1713" height="771" alt="image" src="https://github.com/user-attachments/assets/4e5e2aac-f53e-47af-a4a9-016521a16ce6" />
 
 
+
+
+
+## 📝 Manual Setup
+
+
+### Start Backend in Terminal 
+```
+cd chatbot-backend
+env\Scripts\activate          # Windows
+source env/bin/activate       # Mac/Linux
+python -m uvicorn app.main:app --reload --port 8000
+```
+
+### Start Frontend in Other Terminal
+```
+cd chatbot-frontend
+npm run dev
+```
+
+### Access Points
+- Frontend: http://localhost:3000
+- Backend: http://localhost:8000
+- API Docs: http://localhost:8000/docs
 ---
 
 ## 🌐 Access the Application
@@ -171,30 +195,6 @@ AI_Chatbot_Kearney_YashSingh/
 ---
 
 
-## 📝 Quick Reference
 
-### Start Everything
-```
-python start.py
-```
-
-### Start Backend Only
-```
-cd chatbot-backend
-env\Scripts\activate          # Windows
-source env/bin/activate       # Mac/Linux
-python -m uvicorn app.main:app --reload --port 8000
-```
-
-### Start Frontend Only
-```
-cd chatbot-frontend
-npm run dev
-```
-
-### Access Points
-- Frontend: http://localhost:3000
-- Backend: http://localhost:8000
-- API Docs: http://localhost:8000/docs
 ```
 
